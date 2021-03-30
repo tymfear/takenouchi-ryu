@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "takeno-uchi-ryu": {
+    "takenouchi-ryu": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/takeno-uchi-ryu",
+            "outputPath": "dist/takenouchi-ryu",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "takeno-uchi-ryu:build"
+            "browserTarget": "takenouchi-ryu:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "takeno-uchi-ryu:build:production"
+              "browserTarget": "takenouchi-ryu:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "takeno-uchi-ryu:build"
+            "browserTarget": "takenouchi-ryu:build"
           }
         },
         "test": {
@@ -114,5 +114,5 @@
       }
     }
   },
-  "defaultProject": "takeno-uchi-ryu"
+  "defaultProject": "takenouchi-ryu"
 }
