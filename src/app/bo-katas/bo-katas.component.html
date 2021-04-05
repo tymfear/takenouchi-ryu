@@ -1,0 +1,19 @@
+<div class="text-center">
+  <h1>Bo Katas</h1>
+</div>
+
+<mat-divider class="mb-4"></mat-divider>
+
+<mat-accordion [multi]="true">
+  <mat-expansion-panel *ngFor="let kata of katas"
+                       [(expanded)]="kata.isOpened">
+    <mat-expansion-panel-header class="bg-blue-500">
+      <mat-panel-title class="text-white text-2xl">
+        {{kata.name}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="pt-5 text-lg">
+      <p>{{kata.description}}</p>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

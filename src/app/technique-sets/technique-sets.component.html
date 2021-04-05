@@ -1,0 +1,16 @@
+<div class="text-center">
+  <h1>Technique Sets</h1>
+</div>
+
+<mat-divider class="mb-4"></mat-divider>
+
+<div class="flex justify-center justify-around flex-wrap">
+  <mat-card *ngFor="let set of sets"
+            class="w-40 p-0 cursor-pointer select-none m-4 outline-none"
+            matRipple [matRippleColor]="'rgb(30 64 175 / 25%)'"
+            routerLink="{{set.link}}">
+    <mat-card-header class="m-4 justify-center">
+      <mat-card-title class="m-0">{{set.name}}</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</div>

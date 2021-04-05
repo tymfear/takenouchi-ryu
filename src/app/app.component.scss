@@ -1,0 +1,9 @@
+$topbar-height: 60px;
+
+#topbar {
+  height: 60px;
+}
+
+#main {
+  height: calc(100vh - #{$topbar-height});
+}
